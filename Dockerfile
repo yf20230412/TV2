@@ -1,51 +1,56 @@
-FROM python:3.8-slim
+FROM python:3.13 AS builder
 
-ARG APP_WORKDIR=/tv
+ARG LITE=False
+
+WORKDIR /app
+
+COPY Pipfile* ./
+
+RUN pip install pipenv \
+  && PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy \
+  && if [ "$LITE" = False ]; then pipenv install selenium; fi
+
+RUN apt-get update && apt-get install -y --no-install-recommends wget tar xz-utils
+
+RUN mkdir /usr/bin-new \
+    && ARCH=$(dpkg --print-architecture) \
+    && wget -O /tmp/ffmpeg.tar.gz https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-${ARCH}-static.tar.xz \
+    && tar -xvf /tmp/ffmpeg.tar.gz -C /usr/bin-new/
+
+FROM python:3.13-slim
+
+ARG APP_WORKDIR=/iptv-api
+ARG LITE=False
+ARG APP_PORT=8000
 
 ENV APP_WORKDIR=$APP_WORKDIR
-
-COPY . $APP_WORKDIR
+ENV LITE=$LITE
+ENV APP_PORT=$APP_PORT
+ENV PATH="/.venv/bin:$PATH"
 
 WORKDIR $APP_WORKDIR
 
-RUN pip install -i https://mirrors.aliyun.com/pypi/simple pipenv \
-  && pipenv install
+COPY . $APP_WORKDIR
 
-RUN echo "deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware\n \
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm main contrib non-free non-free-firmware\n \
-  deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware\n \
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware\n \
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-updates main contrib non-free non-free-firmware\n \
-  deb https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-backports main contrib non-free non-free-firmware\n \
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/debian/ bookworm-backports main contrib non-free non-free-firmware\n \
-  deb https://mirrors.tuna.tsinghua.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware\n \
-  deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware\n" \
-  > /etc/apt/sources.list
+COPY --from=builder /app/.venv /.venv
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-  cron \
-  ffmpeg
+COPY --from=builder /usr/bin-new/* /usr/bin
 
-ARG INSTALL_CHROMIUM=false
-
-RUN if [ "$INSTALL_CHROMIUM" = "true" ]; then \
-  apt-get install -y --no-install-recommends \
-  chromium \
-  chromium-driver; \
-  fi
-
-RUN  apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y --no-install-recommends cron \
+  && if [ "$LITE" = False ]; then apt-get install -y --no-install-recommends chromium chromium-driver; fi \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN (crontab -l ; \
-  echo "0 22 * * * cd $APP_WORKDIR && /usr/local/bin/pipenv run python main.py scheduled_task"; \
-  echo "0 10 * * * cd $APP_WORKDIR && /usr/local/bin/pipenv run python main.py scheduled_task") | crontab -
+  echo "0 22 * * * cd $APP_WORKDIR && /.venv/bin/python main.py"; \
+  echo "0 10 * * * cd $APP_WORKDIR && /.venv/bin/python main.py") | crontab -
 
-EXPOSE 8000
+EXPOSE $APP_PORT
 
-COPY entrypoint.sh /tv_entrypoint.sh
+COPY entrypoint.sh /iptv-api-entrypoint.sh
 
-COPY config /tv_config
+COPY config /iptv-api-config
 
-RUN chmod +x /tv_entrypoint.sh
+RUN chmod +x /iptv-api-entrypoint.sh
 
-ENTRYPOINT /tv_entrypoint.sh
+ENTRYPOINT /iptv-api-entrypoint.sh
