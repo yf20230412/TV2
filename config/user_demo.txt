@@ -231,3 +231,7 @@ CCTV-5+
 天元围棋
 快乐垂钓
 JJ斗地主
+#EXTINF:-1  tvg-logo="https://yf1688.top/tv/img/ELTA生活旅遊.png" group-title="💃🏻｜韩国女团",韩国歌团001
+https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240095359203.mp4
+#EXTINF:-1  tvg-logo="https://yf1688.top/tv/img/ELTA生活旅遊.png" group-title="💃🏻｜韩国女团",韩国歌团002
+https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239978750464.mp4
