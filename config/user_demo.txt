@@ -27,7 +27,6 @@ CETV2
 CETV4
 CETV5
 
-
 🦜｜卫视频道,#genre#
 北京卫视
 湖南卫视
@@ -108,26 +107,6 @@ Now华剧
 世界地理
 兵器科技
 
-🏠｜广东频道,#genre#
-广东珠江
-广东体育
-广东新闻
-广东卫视
-大湾区卫视
-广州影视
-广州竞赛
-江门综合
-江门侨乡生活
-佛山综合
-深圳卫视
-汕头综合
-汕头经济
-汕头文旅
-茂名综合
-茂名公共
-
-
-
 🎬｜电影频道,#genre#
 CHC家庭影院
 CHC动作电影
@@ -204,6 +183,9 @@ IPTV经典电影
 🏂｜体育频道,#genre#
 CCTV-5
 CCTV-5+
+睛彩篮球
+睛彩羽毛球
+睛彩广场舞
 广东体育
 纬来体育
 五星体育
@@ -222,16 +204,9 @@ CCTV-5+
 江苏体育
 安徽综艺体育
 吉林篮球
-睛彩篮球
-睛彩羽毛球
-睛彩广场舞
 风云足球
 足球频道
 魅力足球
 天元围棋
 快乐垂钓
 JJ斗地主
-#EXTINF:-1  tvg-logo="https://yf1688.top/tv/img/ELTA生活旅遊.png" group-title="💃🏻｜韩国女团",韩国歌团001
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/240095359203.mp4
-#EXTINF:-1  tvg-logo="https://yf1688.top/tv/img/ELTA生活旅遊.png" group-title="💃🏻｜韩国女团",韩国歌团002
-https://cloud.video.taobao.com//play/u/57349687/p/1/e/6/t/1/239978750464.mp4
