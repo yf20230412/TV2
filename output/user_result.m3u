@@ -1,6 +1,8 @@
 #EXTM3U x-tvg-url="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/e.xml"
-#EXTINF:-1 tvg-name="🥇精选电视直播源" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🥇精选电视直播源.png" group-title="🕘️更新时间",2025-02-02 06:20:34
-https://raw.gitcode.com/yf1688/api/raw/main/videos/美女舞蹈.mp4
+#EXTINF:-1 tvg-name="🕘️更新时间" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🕘️更新时间.png" group-title="🕘️更新时间",2025-02-04 06:20:25
+https://raw.gitcode.com/yf1688/api/raw/main/videos/时间.mp4
+#EXTINF:-1 tvg-name="🕘️更新时间" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🕘️更新时间.png" group-title="🕘️更新时间",🕘️更新时间
+https://raw.gitcode.com/yf1688/api/raw/main/videos/时间.mp4
 #EXTINF:-1 tvg-name="🥇精选电视直播源" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🥇精选电视直播源.png" group-title="🕺｜温馨提示",🥇精选电视直播源
 https://raw.gitcode.com/yf1688/api/raw/main/videos/美女舞蹈.mp4
 #EXTINF:-1 tvg-name="🌺公众号:风言锋语88" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🌺公众号:风言锋语88.png" group-title="🕺｜温馨提示",🌺公众号:风言锋语88
@@ -93,6 +95,8 @@ http://z.b.bkpcp.top/m.php?id=cctv9
 https://www.freetv.top/migu/673168140.m3u8?migutoken=830dc6d6b6d067856aac7606d108de133fc15ec79e6a4d3b4f048a6fc18311015af6a99a1a9a54c20689dfaec9fcf8b214f598fa997339b3b379487f8b47d36144618627365a8a702397a6d1c8
 #EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV9.png" group-title="🐲｜央视频道",CCTV9
 https://www.freetv.top/migu/673168140.m3u8?migutoken=749c49cdc31bb395e0349adc81010adc8707f80e51e9d3491ad67bfa71388ad768f7b52c8064338a7ef45eb7ddb192fb4937b21681c82499a0c16653ad9a9bec98ff5ce6ab183e4029bbdf269e
+#EXTINF:-1 tvg-name="CCTV9" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV9.png" group-title="🐲｜央视频道",CCTV9
+http://www.freetv.top/migu/673168140.m3u8?migutoken=b6b3dff09079aa89b4ea1988e02de40fa003df2db6f755979b0c414bdfffe3225adf1ec44edf5934481e00ada14c3b23dc6e93bb72f70ed2319f17002205dc998b6ce2dde3d00bf5701f8261ec
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV10.png" group-title="🐲｜央视频道",CCTV10
 http://z.b.bkpcp.top/m.php?id=cctv10
 #EXTINF:-1 tvg-name="CCTV10" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV10.png" group-title="🐲｜央视频道",CCTV10
@@ -115,6 +119,8 @@ http://z.b.bkpcp.top/m.php?id=cctv12
 https://www.freetv.top/migu/673168185.m3u8?migutoken=942c5be3e6746f68f39558e72647b47dc97785be38f8a6c22c14d582969637bc1b11e9c9b7c900b0aa1d2c69859f61b0549bca9063632f9e2b71ecc502b0ea2c9054df131432f2b7079f06bd17
 #EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV12.png" group-title="🐲｜央视频道",CCTV12
 https://www.freetv.top/migu/673168185.m3u8?migutoken=37acadb43b1d7932b0a1e8a4f2d01a06b42a10c31f3ccb417bae200ac3028f30a8110509f2cd6cd130aee4b21c85693aa49817f3381e4d28e140d8db1a20b6fecea22fec17a70ff1341efe6081
+#EXTINF:-1 tvg-name="CCTV12" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV12.png" group-title="🐲｜央视频道",CCTV12
+http://www.freetv.top/migu/673168185.m3u8?migutoken=21a3954b28c73a4240272889ec94c3318c23068f666c79e61379cb154a890e4e7e3c998a578b29a381972f128751898531cb713221ff95385afec91149321ad772e31489fa01e553c8223e976a
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV13.png" group-title="🐲｜央视频道",CCTV13
 http://z.b.bkpcp.top/m.php?id=cctv13
 #EXTINF:-1 tvg-name="CCTV13" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV13.png" group-title="🐲｜央视频道",CCTV13
@@ -129,6 +135,8 @@ http://z.b.bkpcp.top/m.php?id=cctv14
 https://www.freetv.top/migu/624878440.m3u8?migutoken=b2c8f66c338b5b26889d774d8225cd6f098dcdba27166a4b531727b573f38f3f844e7ad56f480160c62fd739aabb1e3fba582a85bb08eb359803e7916c60a33f1efbaab4c6f99f66905c65c2fb
 #EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV14.png" group-title="🐲｜央视频道",CCTV14
 https://www.freetv.top/migu/624878440.m3u8?migutoken=239edad94ac0bbff14f123c7f8996ed7639110bd6cf64ec8ba8cf85842224956d452ec8b683385cb27f8a7685224a03e3aa4d914b8fe33249da9df699351b105c795452d03f2be0a1f1e39adb0
+#EXTINF:-1 tvg-name="CCTV14" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV14.png" group-title="🐲｜央视频道",CCTV14
+http://www.freetv.top/migu/624878440.m3u8?migutoken=303d044cf07163e1e2e8e4ecc8b6696ed836301cf573b626d3c00ec50cd362cc5e6a93afc2fd102cb883155554597d14eaa697edc9b0a30e56fc0115f81d8fbb8b87129e5bedad7d2173178f03
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV15.png" group-title="🐲｜央视频道",CCTV15
 http://z.b.bkpcp.top/m.php?id=cctv15
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/CCTV15.png" group-title="🐲｜央视频道",CCTV15
