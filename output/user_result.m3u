@@ -1,7 +1,5 @@
 #EXTM3U x-tvg-url="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/e.xml"
-#EXTINF:-1 tvg-name="🕘️更新时间" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🕘️更新时间.png" group-title="🕘️更新时间",2025-02-04 06:20:25
-https://raw.gitcode.com/yf1688/api/raw/main/videos/时间.mp4
-#EXTINF:-1 tvg-name="🕘️更新时间" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🕘️更新时间.png" group-title="🕘️更新时间",🕘️更新时间
+#EXTINF:-1 tvg-name="🕘️每天上午6点更新" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🕘️每天上午6点更新.png" group-title="🕺｜温馨提示",🕘️每天上午6点更新
 https://raw.gitcode.com/yf1688/api/raw/main/videos/时间.mp4
 #EXTINF:-1 tvg-name="🥇精选电视直播源" tvg-logo="https://ghproxy.cc/https://raw.githubusercontent.com/fanmingming/live/main/tv/🥇精选电视直播源.png" group-title="🕺｜温馨提示",🥇精选电视直播源
 https://raw.gitcode.com/yf1688/api/raw/main/videos/美女舞蹈.mp4
