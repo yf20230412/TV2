@@ -1,7 +1,6 @@
 # 这是订阅源列表，每行一个订阅地址
+# https://yf1688.top/tv/txt/iptv.txt
 
-
-https://yf1688.top/tv/txt/iptv.txt
 https://tv.iill.top/m3u/Gather
 https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt
 https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
