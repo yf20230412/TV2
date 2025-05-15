@@ -1,6 +1,6 @@
 # 这是订阅源列表，每行一个订阅地址
-#https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt
-#https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt
+
 
 https://yf1688.top/tv/txt/iptv.txt
+https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/merged_output.txt
 http://117.72.68.25:9230/latest.txt
