@@ -346,6 +346,7 @@ CHC高清电影,http://dassby.qqff.top:99/live/CHC高清/index.m3u8
 兵团卫视,http://110.7.131.146:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
 兵团卫视,http://110.7.131.4:9901/tsfile/live/0115_1.m3u8?key=txiptv&playlive=1&authid=0
 延边卫视,http://61.138.128.226:19901/tsfile/live/1008_1.m3u8
+延边卫视,http://l.cztvcloud.com/channels/lantian/SXxinchang2/720p.m3u8#
 安多卫视,http://112.123.209.253:85/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 安多卫视,http://112.122.33.200:85/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0
 安多卫视,rtsp://116.176.26.18/PLTV/88888910/224/3221225872/376957310.smil
