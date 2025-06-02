@@ -2,3 +2,18 @@
 # 支持设置白名单：接口后添加$!
 # The local source list, one line per source, format: channel name, interface address
 # Support setting whitelist: add $! after the interface
+
+
+CCTV1,http://8.138.7.223/tv/ptbtv.php?id=27$!
+CCTV2,http://8.138.7.223/tv/cctv2.php$!
+CCTV7,http://8.138.7.223/tv/cctv7.m3u8$!
+CCTV13,http://8.138.7.223/tv/ptbtv.php?id=28$!
+
+江苏卫视,http://8.138.7.223/tv/dl/jstv.php?id=jsws$!
+浙江卫视,http://8.138.7.223/tv/zjws.m3u8$!
+东方卫视,http://8.138.7.223/tv/shtv.php?id=dfws$!
+内蒙古卫视,http://8.138.7.223/tv/nmgws.m3u8$!
+兵团卫视,http://8.138.7.223/tv/btws.m3u8$!
+云南卫视,http://8.138.7.223/tv/yn.php?id=ynws$!
+莲花卫视,http://8.138.7.223/tv/lotustv.m3u8$!
+香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8$!
