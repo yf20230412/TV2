@@ -35,6 +35,7 @@ ENV APP_WORKDIR=$APP_WORKDIR
 ENV APP_HOST="http://localhost"
 ENV APP_PORT=8000
 ENV PATH="/.venv/bin:/usr/local/nginx/sbin:$PATH"
+ENV UPDATE_CRON="0 22,10 * * *"
 
 WORKDIR $APP_WORKDIR
 
@@ -47,7 +48,7 @@ RUN mkdir -p /var/log/nginx && \
   ln -sf /dev/stdout /var/log/nginx/access.log && \
   ln -sf /dev/stderr /var/log/nginx/error.log
 
-RUN apk update && apk add --no-cache ffmpeg pcre
+RUN apk update && apk add --no-cache dcron ffmpeg pcre
 
 EXPOSE $APP_PORT 8080 1935
 

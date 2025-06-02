@@ -1,4 +1,3 @@
-import datetime
 import os
 import sys
 
@@ -21,10 +20,8 @@ from multicast import MulticastUI
 from hotel import HotelUI
 from subscribe import SubscribeUI
 from online_search import OnlineSearchUI
-from epg import EpgUI
 from utils.speed import check_ffmpeg_installed_status
 import pystray
-from service.app import run_service
 
 
 class TkinterUI:
@@ -46,11 +43,9 @@ class TkinterUI:
         self.hotel_ui = HotelUI()
         self.subscribe_ui = SubscribeUI()
         self.online_search_ui = OnlineSearchUI()
-        self.epg_ui = EpgUI()
         self.update_source = UpdateSource()
         self.update_running = False
         self.result_url = None
-        self.now = None
 
     def on_closing(self):
         if messagebox.askyesno("提示",
@@ -94,7 +89,6 @@ class TkinterUI:
         self.hotel_ui.change_entry_state(state=state)
         self.subscribe_ui.change_entry_state(state=state)
         self.online_search_ui.change_entry_state(state=state)
-        self.epg_ui.change_entry_state(state=state)
 
     async def run_update(self):
         self.update_running = not self.update_running
@@ -122,9 +116,6 @@ class TkinterUI:
                                    "使用分辨率、推流相关功能需要安装FFmpeg，为了实现更佳的观看体验，\n是否前往官网下载？"):
                 return webbrowser.open("https://ffmpeg.org")
 
-        if self.now:
-            self.update_source.stop()
-
         loop = asyncio.new_event_loop()
 
         def run_loop():
@@ -137,17 +128,13 @@ class TkinterUI:
     def stop(self):
         asyncio.get_event_loop().stop()
 
-    def update_progress(self, title, progress, finished=False, url=None, now=None):
+    def update_progress(self, title, progress, finished=False, url=None):
         self.progress_bar["value"] = progress
-        self.now = now
-        if finished and now:
-            next_time = now + datetime.timedelta(hours=config.update_interval)
-            title += f", 🕒下次更新时间: {next_time:%Y-%m-%d %H:%M:%S}"
         progress_text = f"{title}, 进度: {progress}%" if not finished else f"{title}"
         self.progress_label["text"] = progress_text
         self.root.update()
         if finished:
-            self.run_button.config(text="定时更新中(重启)" if now else "启动", state="normal")
+            self.run_button.config(text="启动", state="normal")
             self.update_running = False
             self.change_state("normal")
             if url:
@@ -176,7 +163,6 @@ class TkinterUI:
         frame_multicast = tk.ttk.Frame(notebook)
         frame_subscribe = tk.ttk.Frame(notebook)
         frame_online_search = tk.ttk.Frame(notebook)
-        frame_epg = tk.ttk.Frame(notebook)
 
         settings_icon_source = Image.open(
             resource_path("static/images/settings_icon.png")
@@ -210,10 +196,6 @@ class TkinterUI:
             resource_path("static/images/online_search_icon.png")
         ).resize((16, 16))
         online_search_icon = ImageTk.PhotoImage(online_search_icon_source)
-        epg_icon_source = Image.open(
-            resource_path("static/images/epg_icon.png")
-        ).resize((16, 16))
-        epg_icon = ImageTk.PhotoImage(epg_icon_source)
 
         notebook.add(
             frame_default, text="通用设置", image=settings_icon, compound=tk.LEFT
@@ -236,12 +218,6 @@ class TkinterUI:
             image=online_search_icon,
             compound=tk.LEFT,
         )
-        notebook.add(
-            frame_epg,
-            text="EPG",
-            image=epg_icon,
-            compound=tk.LEFT,
-        )
 
         notebook.settings_icon = settings_icon
         notebook.speed_icon = speed_icon
@@ -251,7 +227,6 @@ class TkinterUI:
         notebook.multicast_icon = multicast_icon
         notebook.subscribe_icon = subscribe_icon
         notebook.online_search_icon = online_search_icon
-        notebook.epg_icon = epg_icon
 
         self.default_ui.init_ui(frame_default)
         self.speed_ui.init_ui(frame_speed)
@@ -261,7 +236,6 @@ class TkinterUI:
         self.hotel_ui.init_ui(frame_hotel)
         self.subscribe_ui.init_ui(frame_subscribe)
         self.online_search_ui.init_ui(frame_online_search)
-        self.epg_ui.init_ui(frame_epg)
 
         root_operate = tk.Frame(self.root)
         root_operate.pack(fill=tk.X, pady=8, padx=120)
@@ -302,7 +276,7 @@ class TkinterUI:
 def get_root_location(root):
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
-    width = 620
+    width = 580
     height = 650
     x = (screen_width / 2) - (width / 2)
     y = (screen_height / 2) - (height / 2)
@@ -319,7 +293,4 @@ if __name__ == "__main__":
     root.iconbitmap(resource_path("static/images/favicon.ico"))
     root.after(0, config.copy)
     root.after(0, config.copy("utils/nginx-rtmp-win32"))
-    root.after(0, config.copy("output"))
-    if config.open_service:
-        root.after(0, threading.Thread(target=run_service, daemon=True).start())
     root.mainloop()
