@@ -2,10 +2,10 @@
 
 #https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整套直播源/l.txt
 #https://raw.githubusercontent.com/asdjkl6/tv/tv/.m3u/整套直播源/测试/整套直播源/kk.txt
-#https://yf1688.top/tv/txt/iptv.txt
 
 
 https://gitee.com/mytv-android/iptv-api/raw/master/output/result.m3u
+https://yf1688.top/tv/txt/iptv.txt
 https://11344.kstore.space/dd.txt
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv6.txt
 https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
