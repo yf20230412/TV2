@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://raw.githubusercontent.com/fanmingming/live/main/e.xml"
-#EXTINF:-1 tvg-name="🔥电视直播源" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/🔥电视直播源.png" group-title="🕘️更新时间",2025-06-08 06:20:51
+#EXTINF:-1 tvg-name="🔥电视直播源" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/🔥电视直播源.png" group-title="🕘️更新时间",2025-06-11 06:21:40
 https://raw.gitcode.com/yf1688/api/raw/main/videos/刘婉儿.mp4
 #EXTINF:-1 tvg-name="🔥电视直播源" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/🔥电视直播源.png" group-title="🕺｜免费订阅",🔥电视直播源
 https://raw.gitcode.com/yf1688/api/raw/main/videos/刘婉儿.mp4
@@ -11,6 +11,8 @@ https://live.junhao.mil.cn/rmt9502/3e6e7c5477314ec38f5e58e2a5c70024.m3u8?txSecre
 http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 #EXTINF:-1 tvg-name="1905电影台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/1905电影台.png" group-title="🐲｜央视频道",1905电影台
 https://tv.666150.xyz/1905.php
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江卫视.png" group-title="🦜｜卫视频道",浙江卫视
+https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/浙江卫视.png" group-title="🦜｜卫视频道",浙江卫视
 http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#mitv://generationnexxxt.com:19806/7bf4b3a65eaf421ab6d71bd8dcc4547a
 #EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/深圳卫视.png" group-title="🦜｜卫视频道",深圳卫视
@@ -33,6 +35,8 @@ http://nn.7x9d.cn/地方台8563/海南.php?id=ssws
 http://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 #EXTINF:-1 tvg-name="安多卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/安多卫视.png" group-title="🦜｜卫视频道",安多卫视
 https://livecdn.dmqhyadmin.com/hls/xjmenyuan.m3u8
+#EXTINF:-1 tvg-name="中国教育-1" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/中国教育-1.png" group-title="🦜｜卫视频道",中国教育-1
+http://139.196.214.238/rtp/239.45.1.125:5140$上海电信组播源-cache:139.196.214.238
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/兵团卫视.png" group-title="🦚｜港澳台频道",兵团卫视
 http://8.138.7.223/tv/btws.m3u8
 #EXTINF:-1 tvg-name="兵团卫视" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/兵团卫视.png" group-title="🦚｜港澳台频道",兵团卫视

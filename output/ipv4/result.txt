@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2025-06-08 06:20:51,https://raw.gitcode.com/yf1688/api/raw/main/videos/刘婉儿.mp4
+2025-06-11 06:21:40,https://raw.gitcode.com/yf1688/api/raw/main/videos/刘婉儿.mp4
 
 🕺｜免费订阅,#genre#
 🔥电视直播源,https://raw.gitcode.com/yf1688/api/raw/main/videos/刘婉儿.mp4
@@ -11,6 +11,7 @@ CCTV13,http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 1905电影台,https://tv.666150.xyz/1905.php
 
 🦜｜卫视频道,#genre#
+浙江卫视,https://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
 浙江卫视,http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#mitv://generationnexxxt.com:19806/7bf4b3a65eaf421ab6d71bd8dcc4547a
 深圳卫视,http://yncbn.ks-cdn.gitv.tv/gitv_live/G_SHENZHEN-HQ/G_SHENZHEN-HQ.m3u8
 广西卫视,http://222.134.245.16:9901/tsfile/live/0113_1.m3u8
@@ -22,6 +23,7 @@ CCTV13,http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8
 三沙卫视,http://nn.7x9d.cn/地方台8563/海南.php?id=ssws
 兵团卫视,http://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 安多卫视,https://livecdn.dmqhyadmin.com/hls/xjmenyuan.m3u8
+中国教育-1,http://139.196.214.238/rtp/239.45.1.125:5140$上海电信组播源-cache:139.196.214.238
 
 🦚｜港澳台频道,#genre#
 兵团卫视,http://8.138.7.223/tv/btws.m3u8
