@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2025-06-23 06:18:18,http://148.135.93.213/live.php?id=CCTV1
+2025-06-30 06:18:38,http://148.135.93.213/live.php?id=CCTV1
 
 🐲｜央视频道,#genre#
 CCTV1,http://148.135.93.213/live.php?id=CCTV1
@@ -33,7 +33,6 @@ CCTV17,http://148.135.93.213/live.php?id=CCTV17
 江苏卫视,http://148.135.93.213/live.php?id=江苏卫视
 陕西卫视,http://148.135.93.213/live.php?id=陕西卫视
 湖北卫视,http://148.135.93.213/live.php?id=湖北卫视
-湖北卫视,http://124.220.159.96:35455/mgtv/947472496.m3u8
 内蒙古卫视,http://148.135.93.213/live.php?id=内蒙古卫视
 内蒙古卫视,https://hyf000.eu.org/80947108/NMGWS
 江西卫视,http://148.135.93.213/live.php?id=江西卫视
@@ -65,7 +64,6 @@ CCTV17,http://148.135.93.213/live.php?id=CCTV17
 五星体育,http://148.135.93.213/live.php?id=五星体育
 兵团卫视,http://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
 兵团卫视,https://liveout.btzx.com.cn/62ds9e/yil08g.m3u8
-安多卫视,https://livecdn.dmqhyadmin.com/hls/xjmenyuan.m3u8
 
 🦚｜港澳台频道,#genre#
 兵团卫视,http://8.138.7.223/tv/btws.m3u8
